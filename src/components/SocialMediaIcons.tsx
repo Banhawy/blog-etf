@@ -7,6 +7,10 @@ interface SocialSharingButtonsProps {
     all?: boolean;
 }
 
+interface SocialSharingButtonProps {
+    url: string;
+}
+
 const SocialSharingButtons: React.FC<SocialSharingButtonsProps> = ({
     url,
     socials = ['facebook', 'twitter', 'linkedin', 'reddit', 'whatsapp', 'telegram'],
@@ -111,7 +115,7 @@ const SocialSharingButton: React.FC<SocialSharingButtonsProps & { social: string
     )
 }
 
-const LinkedInButton = ({ url }) => {
+const LinkedInButton: React.FC<SocialSharingButtonProps> = ({ url }) => {
     const encodedUrl = encodeURIComponent(url);
     const title = encodeURIComponent("Check this blog post on #ChateETF");
     const source = encodeURIComponent(url);
@@ -134,7 +138,7 @@ const LinkedInButton = ({ url }) => {
     );
 };
 
-const RedditButton = ({ url }) => {
+const RedditButton: React.FC<SocialSharingButtonProps> = ({ url }) => {
     const encodedUrl = encodeURIComponent(url);
     const title = encodeURIComponent("Check this blog post on #ChateETF");
 
@@ -152,7 +156,7 @@ const RedditButton = ({ url }) => {
     );
 };
 
-const EmailButton = ({ url }) => {
+const EmailButton: React.FC<SocialSharingButtonProps> = ({ url }) => {
     const subject = encodeURIComponent("Check this blog post on #ChateETF");
     const body = encodeURIComponent(url);
 
@@ -170,7 +174,7 @@ const EmailButton = ({ url }) => {
     )
 }
 
-const WhatsAppButton = ({ url }) => {
+const WhatsAppButton: React.FC<SocialSharingButtonProps> = ({ url }) => {
     const encodedUrl = encodeURIComponent(url);
 
     return (
@@ -186,7 +190,7 @@ const WhatsAppButton = ({ url }) => {
     )
 }
 
-const TelegramButton = ({ url }) => {
+const TelegramButton: React.FC<SocialSharingButtonProps> = ({ url }) => {
     const encodedUrl = encodeURIComponent(url);
 
     return (

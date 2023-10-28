@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const authorImage = "https://media.licdn.com/dms/image/C4D03AQFfx0wQ27Nqeg/profile-displayphoto-shrink_400_400/0/1619481595209?e=1703721600&v=beta&t=TVL_ZX3DjOLPxM5pL-hRCrlhDAKqwZekAy_-l6i53cI"
@@ -9,7 +10,7 @@ const EditorPickComponent = () => {
         <div className="bg-gradient-to-r from-blue-600 to-blue-900 p-8 text-white rounded-lg relative">
             {/* Central Content */}
             <div className="mb-6">
-                <h2 className="text-2xl font-semibold">Editor's pick</h2>
+                <h2 className="text-2xl font-semibold">Editor&lsquos pick</h2>
                 <p className="mt-2">Discover the most outstanding articles in all topics of life.</p>
             </div>
 
@@ -22,9 +23,9 @@ const EditorPickComponent = () => {
                             <span className="ml-2 material-icons text-lg">videocam</span>
                         </div>
                         <div className="flex-1">
-                            <h3 className="text-lg font-semibold">Lenovo's smarter devices stoke professional passions</h3>
+                            <h3 className="text-lg font-semibold">Lenovo&lsquos smarter devices stoke professional passions</h3>
                             <div className="flex items-center mt-2">
-                                <img src={authorImage} alt="Author" className="w-8 h-8 rounded-full mr-2" />
+                                <Image src={authorImage} alt="Author" className="w-8 h-8 rounded-full mr-2" />
                                 <div className="text-sm">
                                     <span>Lia</span> - <span className="text-gray-400">Sep 11, 2023</span> · <span>1 min</span>
                                 </div>
@@ -35,7 +36,7 @@ const EditorPickComponent = () => {
 
                 {/* Image on the Featured Card */}
                 <div className="mt-6">
-                    <img src={backgroundImage} alt="Beach View" className="rounded-lg" />
+                    <Image src={backgroundImage} alt="Beach View" className="rounded-lg" />
                 </div>
             </div>
         </div>

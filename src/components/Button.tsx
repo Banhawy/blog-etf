@@ -50,6 +50,7 @@ export function Button<
 
   className = clsx(
     baseStyles[variant],
+    // @ts-expect-error
     variantStyles[variant][color],
     className,
   )
