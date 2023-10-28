@@ -104,7 +104,7 @@ const navigation = {
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-900" aria-labelledby="footer-heading">
+        <footer className="bg-black relative bottom-0 w-full" aria-labelledby="footer-heading">
             <h2 id="footer-heading" className="sr-only">
                 Footer
             </h2>
@@ -132,7 +132,7 @@ export default function Footer() {
                         <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                             <button
                                 type="submit"
-                                className="flex w-full items-center justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                                className="flex w-full items-center justify-center rounded-md bg-gray-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                             >
                                 Subscribe
                             </button>
