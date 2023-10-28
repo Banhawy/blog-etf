@@ -1,0 +1,26 @@
+{
+  "id": "blog_posts_list",
+  "type": "SharedSlice",
+  "name": "BlogPostsList",
+  "description": "BlogPostsList",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "featured_post": {
+          "type": "Link",
+          "config": {
+            "label": "Featured Post",
+            "select": "document"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
